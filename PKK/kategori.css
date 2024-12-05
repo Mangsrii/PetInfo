@@ -1,0 +1,226 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #FFF9E1;
+
+}
+
+nav {
+    background-color: rgba(140, 216, 187, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav div img{
+    width: 100px;
+    height: 65px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 300ms;
+}
+
+nav ul li a:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+.gambar img {
+    display: flex;
+    border-radius:100%;
+    height: 80;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lapisan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    max-width: fit-content;
+    margin: auto;
+    padding: 0px 10px 0px 20px;
+    gap: 20px;
+    margin-bottom: 30px;
+
+}
+.isi {
+    display: flex;
+    max-width: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+
+}
+.berita {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 20px;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.artikel1 {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 30px; /* Jarak antara gambar dan teks */
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 1200px;
+    padding-bottom: 20px;
+}
+.teks {
+    max-width: 500px;
+}
+.gabungan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lainnya {
+    align-self: flex-start; /* Posisi ke kiri secara vertikal */
+    text-align: left; /* Posisi teks ke kiri */
+    width: 50%; 
+    padding-left: 20px;
+    gap: 50px;
+    
+}
+.lainnya img {
+    width: 90px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 248, 247);
+    border-radius: 15px;
+    width: 1200px;
+    height: 125px; 
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.item:hover {
+    background-color: rgb(177, 224, 206);
+}
+.item img {
+    width: 100px;
+    border-radius: 10px;
+}
+.kata {
+   padding-left: 10px;
+   max-width: fit-content;
+}
+
+/*footer*/
+
+
+.footer {
+    background-color: #4a7a6a;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .column1 > p {
+    width: 100%;
+}
+
+.footer .column {
+    /* border: 1px solid red; */
+    width: 300px;
+}
+
+.footer .column:not(:first-child){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .column:nth-child(2){
+    margin-left: 5rem;
+}
+
+.footer .column1 {
+    width: 400px; 
+}
+
+.footer .column1 > img {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.footer .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer .column p {
+    margin-top: 2rem;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.footer .social-icons a:last-child {
+    margin-right: 0;
+}
+.footer .links {
+    list-style: none;
+    padding: 0;
+}
+.footer .links li {
+    margin-bottom: 10px;
+}
+.footer .links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
